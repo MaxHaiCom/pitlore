@@ -36,7 +36,7 @@ if (
   manifest.name !== "pitlore" ||
   manifest.version !== version ||
   manifest.repository?.url !==
-    "git+https://github.com/Hardboiled98k/pitlore.git"
+    "git+https://github.com/MaxHaiCom/pitlore.git"
 ) {
   fail("tag version does not match the checked-out package manifest");
 }

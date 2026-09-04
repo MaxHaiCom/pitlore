@@ -27,7 +27,7 @@ PitLore 已形成三层可运行工程基线：本地 Lesson 闭环、Git-first 
 | 字段             | 2026-07-28 本地已核验值                                                                                                 |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | 产品             | PitLore `0.1.1` 首个公开 npm/GitHub Release；Apache-2.0；Node.js 22+ / TypeScript；consumer CI 覆盖 Node.js 22/24 LTS |
-| 仓库             | `Hardboiled98k/pitlore`，public；默认分支 `main`                                                                         |
+| 仓库             | `MaxHaiCom/pitlore`，public；默认分支 `main`                                                                         |
 | 当前发行基线     | `v0.1.1` → `efb3eb0ef723f3eac31fbbfdcac05419898811e4`；包含 public discovery facets v1、migration `009`、跨平台安装门禁与社区治理配置 |
 | CI 见证          | 公开 `efb3eb0`：CI run `30285880716`（11/11 jobs）、CodeQL run `30285880024`（3/3）全绿；14/14 check-runs success、0 annotations |
 | 工作树           | 公共历史从 GitHub noreply clean import 开始；本地与公开 `main` 同步，旧开发历史只保留在 private archive                  |
@@ -35,7 +35,7 @@ PitLore 已形成三层可运行工程基线：本地 Lesson 闭环、Git-first 
 | 自托管           | 真 PostgreSQL 17：`001`–`008` 历史 release → `009` → CLI reindex/幂等复跑/runtime 拒绝，以及 fresh restore/restart 全通过 |
 | 分页性能探针     | synthetic 100k releases：PostgreSQL keyset 取 101 行 lookahead，index 扫描约 102 行，约 0.57 ms；只是工程证据           |
 | Demo / 发布包    | tenant Demo 通过；tarball、npm exec/全局安装、隔离 Git smoke、无凭据 GitHub 安装/lock 重放及全新匿名 npm registry CLI/MCP 安装均通过；约 0.53 MB / 2.73 MB / 243 files |
-| npm / GitHub 发布 | `v0.1.1` dry-run [`30286365114`](https://github.com/Hardboiled98k/pitlore/actions/runs/30286365114) 全门禁通过；exact artifact SHA-256 `abe3e6fc9a55198d519ba93040b81676d21498f8c53011e77d418120d1f9df16` 已发布为 [`pitlore@0.1.1`](https://www.npmjs.com/package/pitlore/v/0.1.1) 并附到 [GitHub Release](https://github.com/Hardboiled98k/pitlore/releases/tag/v0.1.1)，三处字节一致；首次账号级 2FA bootstrap 无 OIDC provenance，后续发布者已精确绑定 repo/workflow/environment |
+| npm / GitHub 发布 | `v0.1.1` dry-run [`30286365114`](https://github.com/MaxHaiCom/pitlore/actions/runs/30286365114) 全门禁通过；exact artifact SHA-256 `abe3e6fc9a55198d519ba93040b81676d21498f8c53011e77d418120d1f9df16` 已发布为 [`pitlore@0.1.1`](https://www.npmjs.com/package/pitlore/v/0.1.1) 并附到 [GitHub Release](https://github.com/MaxHaiCom/pitlore/releases/tag/v0.1.1)，三处字节一致；首次账号级 2FA bootstrap 无 OIDC provenance，后续发布者已精确绑定 repo/workflow/environment |
 | 仓库保护         | live `main` 禁止 force-push/delete，要求 GitHub Actions `CI required`、PR stale-review dismiss 与 conversation resolution；单维护者审批数为 0，admin 保留紧急绕过；active `v*` tag ruleset 禁止已创建标签更新或删除 |
 | 开源治理         | GitHub community profile = 100%；CODEOWNERS、Contributor Covenant 2.1、结构化 issue forms、PR template 和 Dependabot 已启用；行为准则如实披露单维护者无独立申诉方边界 |
 | 依赖审计         | production tree = 0；high/critical gate 通过；286 个 lock artifact 均为 npm 官方 registry；MCP bundle notice 正文有 SHA-256 门禁；audit 汇总的 2 个 dev-only Hono moderate 已在所装 1.19.17 修复，且 adapter 不进入 MCP bundle |
@@ -47,7 +47,7 @@ PitLore 已形成三层可运行工程基线：本地 Lesson 闭环、Git-first 
 ## 新会话恢复顺序
 
 1. 读本文件，然后运行 `git status -sb`、`git log --oneline -5`、
-   `gh repo view Hardboiled98k/pitlore` 和 `gh run list --branch main`。
+   `gh repo view MaxHaiCom/pitlore` 和 `gh run list --branch main`。
 2. 改变信任/阶段边界前读 [DECISIONS.md](./DECISIONS.md)；D-018 已移除固定周期收口，
    不取消 D-003 人审边界和 D-011 证据口径。
 3. 完整产品目标读 [PRD.md](./PRD.md)；已交付事实以本文件和实时代码为准。
@@ -114,7 +114,7 @@ PitLore 已形成三层可运行工程基线：本地 Lesson 闭环、Git-first 
 - `v0.1.1` tag-bound 演练跨 Ubuntu/macOS/Windows × Node.js 22/24 全通过；同一
   SHA-256 固定 tarball 经账号级 2FA 交互 bootstrap 到 npm，并作为 GitHub Release
   asset 固化。首次版本没有 trusted-publishing provenance。
-- npm trusted publisher 已精确绑定 `Hardboiled98k/pitlore`、`npm-publish.yml` 和
+- npm trusted publisher 已精确绑定 `MaxHaiCom/pitlore`、`npm-publish.yml` 和
   `npm-publish` environment，allowed action 仅为 publish；本机 bootstrap 登录已退出。
   此配置的真实 OIDC 能力仍须由下一版本的成功 publish job 证明。
 
@@ -194,7 +194,7 @@ PitLore 已形成三层可运行工程基线：本地 Lesson 闭环、Git-first 
 npm run verify                 # 44 files / 377 tests + typecheck + build
 npm run demo:tenant            # passed
 npm run test:install           # passed; tarball + isolated Git dependency consumer smokes
-npm install --save-dev "git+https://github.com/Hardboiled98k/pitlore.git#main"
+npm install --save-dev "git+https://github.com/MaxHaiCom/pitlore.git#main"
                                # passed in no-credential temp HOME; lock replay also passed
 npm run test:self-host         # passed; 008→009 reindex + fresh restore/restart on PostgreSQL 17
 npm run audit:prod             # 0 vulnerabilities

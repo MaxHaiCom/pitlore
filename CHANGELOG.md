@@ -61,5 +61,5 @@ for the distributed CLI package; Lesson and Pack schema versions have their own 
 - Public Pack verification is bounded and fail-closed for paths, symlinks, sizes,
   sensitive content, detector safety, signatures, and licenses.
 
-[0.1.1]: https://github.com/Hardboiled98k/pitlore/releases/tag/v0.1.1
-[0.1.0]: https://github.com/Hardboiled98k/pitlore/tree/v0.1.0
+[0.1.1]: https://github.com/MaxHaiCom/pitlore/releases/tag/v0.1.1
+[0.1.0]: https://github.com/MaxHaiCom/pitlore/tree/v0.1.0

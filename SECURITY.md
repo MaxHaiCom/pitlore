@@ -11,7 +11,7 @@ Please do not open a public issue for a suspected vulnerability or include
 working secrets, private Lessons, evidence, customer data, or proprietary source
 in a report.
 
-Use [GitHub private vulnerability reporting](https://github.com/Hardboiled98k/pitlore/security/advisories/new).
+Use [GitHub private vulnerability reporting](https://github.com/MaxHaiCom/pitlore/security/advisories/new).
 Include only the minimum reproduction needed, the affected commit or version,
 the security impact, and a suggested mitigation when available. If the report
 involves leaked credentials, revoke or rotate them before reporting.

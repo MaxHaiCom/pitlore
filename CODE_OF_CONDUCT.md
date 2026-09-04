@@ -60,7 +60,7 @@ representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported privately through the repository's
-[private reporting form](https://github.com/Hardboiled98k/pitlore/security/advisories/new).
+[private reporting form](https://github.com/MaxHaiCom/pitlore/security/advisories/new).
 Use a title beginning with `Conduct report` and include only the minimum details
 needed to investigate. Do not open a public issue or identify affected people in
 public.

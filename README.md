@@ -4,7 +4,7 @@
 
 Turn past bugs into versioned **Lessons** that any coding agent (Codex, Claude Code, Cursor, …) can **retrieve** before writing code and **check** before you ship.
 
-[![CI](https://github.com/Hardboiled98k/pitlore/actions/workflows/ci.yml/badge.svg)](https://github.com/Hardboiled98k/pitlore/actions/workflows/ci.yml)
+[![CI](https://github.com/MaxHaiCom/pitlore/actions/workflows/ci.yml/badge.svg)](https://github.com/MaxHaiCom/pitlore/actions/workflows/ci.yml)
 
 > _The lore of pits your agents must not fall into again._
 
@@ -64,7 +64,7 @@ not available. Pin a release tag or commit SHA for reproducibility:
 
 ```bash
 cd your-project
-npm install --save-dev "git+https://github.com/Hardboiled98k/pitlore.git#v0.1.1"
+npm install --save-dev "git+https://github.com/MaxHaiCom/pitlore.git#v0.1.1"
 npx --no-install pitlore --version
 ```
 
@@ -76,7 +76,7 @@ path.
 ### Work from a source checkout
 
 ```bash
-git clone https://github.com/Hardboiled98k/pitlore.git
+git clone https://github.com/MaxHaiCom/pitlore.git
 cd pitlore
 npm ci
 
@@ -118,7 +118,7 @@ npx --yes pitlore@0.1.1 --version
 If a requested version returns `E404`, it has not been published to npm; use an exact
 public Git ref only when that source-install path is intended. A public source commit does
 not imply an npm publication. PitLore is developed in public at
-[`Hardboiled98k/pitlore`](https://github.com/Hardboiled98k/pitlore). The source repository
+[`MaxHaiCom/pitlore`](https://github.com/MaxHaiCom/pitlore). The source repository
 is public, while every local `.pitlore/` store, candidate, review, and evidence ledger
 remains private by default and is excluded from Git.
 
@@ -320,11 +320,11 @@ pitlore serve
 This repository checks in project-scoped configs for both clients:
 
 - Claude Code reads
-  [`.mcp.json`](https://github.com/Hardboiled98k/pitlore/blob/main/.mcp.json).
+  [`.mcp.json`](https://github.com/MaxHaiCom/pitlore/blob/main/.mcp.json).
   On first use, review and approve the project server in `/mcp`; repository config
   cannot approve itself.
 - Codex reads
-  [`.codex/config.toml`](https://github.com/Hardboiled98k/pitlore/blob/main/.codex/config.toml)
+  [`.codex/config.toml`](https://github.com/MaxHaiCom/pitlore/blob/main/.codex/config.toml)
   only after the project is trusted. Approved-only retrieve/check/export tools are
   pre-approved; candidate-aware search/get, candidate review, and the writing
   `pitlore_remember` keep prompting.
@@ -573,7 +573,7 @@ a production-hosted service or real external-provider operation.
 Contributions are welcome. Follow [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md),
 start with [`CONTRIBUTING.md`](./CONTRIBUTING.md), use [`SUPPORT.md`](./SUPPORT.md)
 for the right public help channel, and copy the
-[Pack-specific pull-request checklist](https://github.com/Hardboiled98k/pitlore/blob/main/.github/PULL_REQUEST_TEMPLATE/pack.md)
+[Pack-specific pull-request checklist](https://github.com/MaxHaiCom/pitlore/blob/main/.github/PULL_REQUEST_TEMPLATE/pack.md)
 for public Lesson or Pack changes. Never submit a local `.pitlore/`, private
 Lessons/reviews/evidence, credentials, PII, customer data, or proprietary source.
 
