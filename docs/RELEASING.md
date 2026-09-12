@@ -165,7 +165,7 @@ npm exec --yes \
 本仓库的实际 bootstrap 已于 `v0.1.1` 完成：
 
 - dry-run workflow 为
-  [`30286365114`](https://github.com/Hardboiled98k/pitlore/actions/runs/30286365114)，
+  [`30286365114`](https://github.com/MaxHaiCom/pitlore/actions/runs/30286365114)，
   tag commit 为 `efb3eb0ef723f3eac31fbbfdcac05419898811e4`；
 - workflow artifact、npm registry tarball 和 GitHub Release asset 字节一致，SHA-256
   都是 `abe3e6fc9a55198d519ba93040b81676d21498f8c53011e77d418120d1f9df16`；
@@ -182,14 +182,14 @@ npm exec --yes \
   --package=npm@11.18.0 -- \
   npm trust github pitlore \
   --file npm-publish.yml \
-  --repo Hardboiled98k/pitlore \
+  --repo MaxHaiCom/pitlore \
   --environment npm-publish \
   --allow-publish \
   --registry=https://registry.npmjs.org
 npm logout --registry=https://registry.npmjs.org
 ```
 
-账号必须启用 2FA。Publisher 必须精确绑定 `Hardboiled98k/pitlore`、workflow
+账号必须启用 2FA。Publisher 必须精确绑定 `MaxHaiCom/pitlore`、workflow
 `npm-publish.yml` 和 environment `npm-publish`，allowed action 只启用 `npm publish`。
 本仓库已在登出前通过 `npm trust list pitlore --json` 核对这些字段。该配置的真实 OIDC
 发布能力仍须由下一版本的成功 publish job 证明；配置存在本身不能冒充真实发布验证。

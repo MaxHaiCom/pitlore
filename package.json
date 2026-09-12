@@ -2,13 +2,13 @@
   "name": "pitlore",
   "version": "0.1.1",
   "description": "Executable pit lore for coding agents — lessons from past bugs, retrieved and enforced at write time.",
-  "homepage": "https://github.com/Hardboiled98k/pitlore#readme",
+  "homepage": "https://github.com/MaxHaiCom/pitlore#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hardboiled98k/pitlore.git"
+    "url": "git+https://github.com/MaxHaiCom/pitlore.git"
   },
   "bugs": {
-    "url": "https://github.com/Hardboiled98k/pitlore/issues"
+    "url": "https://github.com/MaxHaiCom/pitlore/issues"
   },
   "type": "module",
   "bin": {

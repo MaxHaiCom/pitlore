@@ -47,7 +47,7 @@ checks pass by weakening compiler settings, skipping assertions, swallowing
 errors, or forcing a breaking dependency downgrade.
 
 Repository agents follow
-[`AGENTS.md`](https://github.com/Hardboiled98k/pitlore/blob/main/AGENTS.md):
+[`AGENTS.md`](https://github.com/MaxHaiCom/pitlore/blob/main/AGENTS.md):
 retrieve relevant approved Lessons before non-trivial implementation, check
 changed production sources before completion, and record a real bug fix only as
 a private candidate. Humans alone approve, reject, or deprecate Lessons and
@@ -65,7 +65,7 @@ Keep each pull request focused and include:
 
 Pack and Lesson changes must satisfy the
 [Pack specification](./docs/PACK-SPEC.md), copy the
-[Pack-specific checklist](https://github.com/Hardboiled98k/pitlore/blob/main/.github/PULL_REQUEST_TEMPLATE/pack.md)
+[Pack-specific checklist](https://github.com/MaxHaiCom/pitlore/blob/main/.github/PULL_REQUEST_TEMPLATE/pack.md)
 into the pull request body, include applicable license terms, and explain the
 real failure mode, abstraction boundary, sources, detector precision, and SemVer
 impact. A block-level detector needs at least one bad and one good fixture:

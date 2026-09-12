@@ -213,7 +213,7 @@
   7 天真实使用与 current-catalog 人工 evidence 继续如实积累，但不再作为源码开源、
   日常开发、版本发布或 Phase 推进的前置条件。
 - **公开顺序**：文档决策本身不等于 GitHub visibility 已改变。截至本决策记录时，
-  `Hardboiled98k/pitlore` 仍为 private；先完成当前主线收口与全历史开源安全审计，再执行
+  `MaxHaiCom/pitlore` 仍为 private；先完成当前主线收口与全历史开源安全审计，再执行
   公开动作，不能提前宣称仓库已 public。
 - **不变边界**：D-003/D-010 的独立人类生命周期授权、D-006 的显式脱敏公开和 D-011 的
   evidence 完整性继续有效。Agent 仍只能生成 private candidate 或 advisory review，
@@ -228,7 +228,7 @@
 - **状态**：accepted
 - **决策**：把原 GitHub 仓库重命名并继续保持 private，以保留完整开发、PR 和 Actions
   记录；从经过全树安全审计的当前 `main` 生成新的 root history，不导入原仓 commits、
-  refs、PR、Actions、tags 或 releases，在 `Hardboiled98k/pitlore` 建立 public 仓库。
+  refs、PR、Actions、tags 或 releases，在 `MaxHaiCom/pitlore` 建立 public 仓库。
   公共历史从单个 GitHub noreply import commit 开始。
 - **原因**：旧历史未发现真实凭据或 private Lesson 泄漏，但全部旧提交使用非 noreply
   个人邮箱，少量历史文档还包含本机用户名路径。直接改变 visibility 会公开这些个人

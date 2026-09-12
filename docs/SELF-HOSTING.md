@@ -22,7 +22,7 @@ preserved.
 Run this guide from a public source checkout:
 
 ```bash
-git clone https://github.com/Hardboiled98k/pitlore.git
+git clone https://github.com/MaxHaiCom/pitlore.git
 cd pitlore
 npm ci
 ```
