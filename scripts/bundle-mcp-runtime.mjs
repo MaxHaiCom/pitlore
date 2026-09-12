@@ -86,7 +86,7 @@ const licensedPackages = new Map([
   [
     "fast-uri",
     {
-      version: "3.1.4",
+      version: "3.1.7",
       noticeSha256:
         "a3b18179bc70db1203b99151da5ffe52f6a33b33307a931b4bc7aa469aad562b",
     },
@@ -183,7 +183,7 @@ for (const packageRoot of bundledPackageRoots.get("fast-uri")) {
   if (
     semver.satisfies(
       fastUriPackage.version,
-      ">=3.0.0 <=3.1.3 || >=4.0.0 <=4.1.0",
+      ">=3.0.0 <=3.1.5 || >=4.0.0 <=4.1.2",
     )
   ) {
     throw new Error(
