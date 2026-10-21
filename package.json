@@ -89,7 +89,7 @@
     "zod": "^3.25.28"
   },
   "devDependencies": {
-    "@modelcontextprotocol/sdk": "1.29.0",
+    "@modelcontextprotocol/sdk": "1.32.0",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^22.13.10",
     "@types/pg": "8.20.0",
